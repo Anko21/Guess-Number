@@ -1,6 +1,6 @@
 # GuessNumber
 GuessNumber is a simple Android app developed using Jetpack Compose. It allows users to input guesses and determine a randomly generated number between 1 and 100. The app provides instant feedback on whether the guess is too high, too low, or correct.
-![Image](app/images/1.png)
+![Image](app/images/5.png)
 ## Features
 ### Input Field: 
 Users can enter their guesses into a text field.
