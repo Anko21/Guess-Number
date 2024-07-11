@@ -110,7 +110,6 @@ fun App() {
         Spacer(modifier = Modifier.height(40.dp))
 
         if (!isGameEnded) {
-            // Only show guess input and submit button when game is ongoing
             TextField(
                 value = guessText,
                 onValueChange = { guessText = it },
@@ -145,10 +144,8 @@ fun App() {
                 Text("Submit")
             }
         } else {
-            // Show restart button when game is ended
             Button(
                 onClick = {
-                    // Reset game state
                     isGameEnded = false
                     randomNumber = Random.nextInt(1, 101)
                     guessText = ""
@@ -156,12 +153,12 @@ fun App() {
                 },
                 modifier = Modifier
                     .fillMaxWidth()
-                    .padding(vertical = 8.dp), // Adding padding for better visual separation
-                colors = ButtonDefaults.buttonColors(Color.Green), // Setting the background color
+                    .padding(vertical = 8.dp),
+                colors = ButtonDefaults.buttonColors(Color.Green),
             ) {
                 Text(
                     text = "Restart",
-                    color = Color.White // Setting text color
+                    color = Color.White
                 )
             }
         }
